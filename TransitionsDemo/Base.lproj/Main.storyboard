@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11191" systemVersion="16A313a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11156"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="TransitionsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oFC-y2-x0Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yza-Ai-J1Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBm-BM-SAz">
+                                <color key="backgroundColor" red="0.1529411765" green="0.61176470589999998" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="178" id="Ve2-4E-sEN"/>
+                                    <constraint firstAttribute="height" constant="40" id="bhK-7b-8qV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="Cover Vertical">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="UKj-vb-t7M" kind="showDetail" id="omp-UD-9Vd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7R-8d-Xdx">
+                                <color key="backgroundColor" red="0.1529411765" green="0.61176470589999998" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="Flip Horizontal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="UKj-vb-t7M" kind="presentation" modalTransitionStyle="flipHorizontal" id="jKo-D3-X8s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbM-ta-Fsu">
+                                <color key="backgroundColor" red="0.1529411765" green="0.61176470589999998" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="Cross Dissolve">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="UKj-vb-t7M" kind="presentation" modalTransitionStyle="crossDissolve" id="HkA-dW-lQT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8wI-MU-o9s">
+                                <color key="backgroundColor" red="0.1529411765" green="0.61176470589999998" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="Partial Curl">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="UKj-vb-t7M" kind="presentation" modalTransitionStyle="partialCurl" id="VAR-hf-PKf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23921568630000001" green="0.25882352939999997" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VbM-ta-Fsu" firstAttribute="top" secondItem="R7R-8d-Xdx" secondAttribute="bottom" constant="20" id="2st-Tc-fQS"/>
+                            <constraint firstItem="R7R-8d-Xdx" firstAttribute="top" secondItem="RBm-BM-SAz" secondAttribute="bottom" constant="20" id="9h1-uA-IAF"/>
+                            <constraint firstItem="8wI-MU-o9s" firstAttribute="top" secondItem="VbM-ta-Fsu" secondAttribute="bottom" constant="20" id="G4b-Y0-EOC"/>
+                            <constraint firstAttribute="centerX" secondItem="RBm-BM-SAz" secondAttribute="centerX" id="HkC-Qo-nM3"/>
+                            <constraint firstItem="VbM-ta-Fsu" firstAttribute="centerX" secondItem="8wI-MU-o9s" secondAttribute="centerX" id="JDC-td-p5l"/>
+                            <constraint firstItem="RBm-BM-SAz" firstAttribute="width" secondItem="R7R-8d-Xdx" secondAttribute="width" id="M6i-u0-aIl"/>
+                            <constraint firstItem="VbM-ta-Fsu" firstAttribute="width" secondItem="8wI-MU-o9s" secondAttribute="width" id="Vul-lP-ePj"/>
+                            <constraint firstItem="VbM-ta-Fsu" firstAttribute="width" secondItem="R7R-8d-Xdx" secondAttribute="width" id="XfX-sY-JEI"/>
+                            <constraint firstItem="VbM-ta-Fsu" firstAttribute="centerX" secondItem="R7R-8d-Xdx" secondAttribute="centerX" id="cDr-CY-cGC"/>
+                            <constraint firstAttribute="centerY" secondItem="RBm-BM-SAz" secondAttribute="centerY" constant="90" id="gwS-NM-RrD"/>
+                            <constraint firstItem="RBm-BM-SAz" firstAttribute="height" secondItem="R7R-8d-Xdx" secondAttribute="height" id="hrh-pE-cKY"/>
+                            <constraint firstItem="RBm-BM-SAz" firstAttribute="leading" secondItem="R7R-8d-Xdx" secondAttribute="leading" id="n8s-ya-UUX"/>
+                            <constraint firstItem="VbM-ta-Fsu" firstAttribute="height" secondItem="R7R-8d-Xdx" secondAttribute="height" id="nUM-IN-Cwm"/>
+                            <constraint firstItem="VbM-ta-Fsu" firstAttribute="height" secondItem="8wI-MU-o9s" secondAttribute="height" id="oQC-Ns-f3z"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="62" y="385"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sKc-Ua-QhC">
+            <objects>
+                <viewController id="UKj-vb-t7M" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bcb-nu-tmm"/>
+                        <viewControllerLayoutGuide type="bottom" id="VEB-ju-evQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HKp-O5-PP3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3X-ry-KgC">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="126-Il-wrH"/>
+                                    <constraint firstAttribute="width" constant="178" id="Ebr-yY-fLg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.1529411765" green="0.61176470589999998" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BZF-Yf-Ixd" kind="unwind" unwindAction="unwindToViewController:" id="u48-rm-Rsb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.90740004369924432" blue="0.75001281131508846" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="M3X-ry-KgC" secondAttribute="centerX" id="GtB-kv-T8H"/>
+                            <constraint firstAttribute="centerY" secondItem="M3X-ry-KgC" secondAttribute="centerY" id="tpQ-Ph-VGM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="duq-9d-nwi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="BZF-Yf-Ixd" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="854" y="386"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="HkA-dW-lQT"/>
+    </inferredMetricsTieBreakers>
+</document>
